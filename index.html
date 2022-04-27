@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="w3.css">
+    <title>Resume</title>
 </head>
+<script>
+    function sideMenu() {
+        var x = document.getElementById("idsidebar");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.classname += " w3-show";
+        } else {
+            x.className = x.className.replace("w3-show", "");
+        }
+    }
+</script>
+
 <body>
-    
+    <div class="wrapper">
+        <div class="resume w3-bar w3-amber">
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Profile</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Education</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right"> Skills</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Trainings and Activities</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Projects</a>
+            <a href="javascript:void(0)" onclick="sideMenu()"
+                class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right">&#9776</a>
+        </div>
+
+        <div id="idsidebar" class="w3-bar-block w3-amber w3-hide w3-hide-large w3-hide-medium">
+            <a href="#" class="w3-bar-item w3-button w3-right">Profile</a>
+            <a href="#" class="w3-bar-item w3-button w3-right">Education</a>
+            <a href="#" class="w3-bar-item w3-button w3-right"> Skills</a>
+            <a href="#" class="w3-bar-item w3-button w3-right">Trainings and Activities</a>
+            <a href="#" class="w3-bar-item w3-button w3-right">Projects</a>
+        </div>
+
+        <div class="w3-row w3-border">
+            <div class="w3-image w3-container w3-third w3-black">
+                <img src="resume2.jpeg" alt="Person" style="width:75%" class = "w3-center">
+                <div class="w3-text-purple" style="text-shadow:1px 1px 0 #444">
+                    <h3><b>Profile</b></h3>
+                </div>
+                <div class="w3-Arial">
+                    <p>
+                        Fresh Graduates who are full of
+                        passion in the programming
+                        field, ready to accept any
+                        challenges, and love to learn new
+                        things.</p>
+                    <p>Bringing forth a motivated attitude
+                        and a variety of powerful skills.</p>
+                    <p>Committed to utilizing my skills to
+                        further the mission of a company.</p>
+                </div>
+                <div class="w3-text-purple">
+                    <h4><b>Contact</b></h4>
+                </div>
+            </div>
+
+            <div class="w3-container w3-twothird">
+                <h3 style="color: purple;text-shadow:1px 1px 0 #444;"><b>Education</b></h3>
+                <div>
+                    <h5>University Utara Malaysia, Kedah Darul Aman</h5>
+                </div>
+                <div class="w3-Arial">
+                    <p>
+                        October 2020 till April 2024
+                        Current CGPA: 3.88
+                        Muet: Band 3
+                        Award: Dean Award 2020/2021</p>
+                    <p>Bringing forth a motivated attitude
+                        and a variety of powerful skills.</p>
+                    <p>Committed to utilizing my skills to
+                        further the mission of a company.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
 </body>
+
 </html>
