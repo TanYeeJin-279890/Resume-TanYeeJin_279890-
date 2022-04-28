@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css">
     <title>Resume</title>
 </head>
 <script>
@@ -19,8 +20,14 @@
     }
 </script>
 
+<style>
+    body {
+        background-color: powderblue;
+    }
+</style>
+
 <body>
-    <div class="wrapper">
+    <div>
         <div class="resume w3-bar w3-amber">
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Profile</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Education</a>
@@ -40,12 +47,15 @@
         </div>
 
         <div class="w3-row w3-border">
-            <div class="w3-image w3-container w3-third w3-black">
-                <img src="resume2.jpeg" alt="Person" style="width:75%" class = "w3-center">
-                <div class="w3-text-purple" style="text-shadow:1px 1px 0 #444">
+
+
+            <div class="left w3-container w3-third w3-black">
+                <div class="image"><img src="resume2.jpeg" alt="Person"></div>
+
+                <div class="title">
                     <h3><b>Profile</b></h3>
                 </div>
-                <div class="w3-Arial">
+                <div class="content">
                     <p>
                         Fresh Graduates who are full of
                         passion in the programming
@@ -63,11 +73,13 @@
             </div>
 
             <div class="w3-container w3-twothird">
-                <h3 style="color: purple;text-shadow:1px 1px 0 #444;"><b>Education</b></h3>
+                <div class="title">
+                    <h3><b>Education</b></h3>
+                </div>
                 <div>
                     <h5>University Utara Malaysia, Kedah Darul Aman</h5>
                 </div>
-                <div class="w3-Arial">
+                <div class="content">
                     <p>
                         October 2020 till April 2024
                         Current CGPA: 3.88
@@ -79,7 +91,7 @@
                         further the mission of a company.</p>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
