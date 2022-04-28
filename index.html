@@ -23,7 +23,7 @@
 
 <style>
     body {
-        background: linear-gradient(to right, #cc33ff 0%, #ff66cc 100%);
+        background: linear-gradient(to right, #cc33ff 0%, #f9a4dc 100%);
     }
 
     img {
@@ -32,6 +32,8 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
+        margin-bottom: 20px;
+        border: 5px solid #555
     }
 
     h1,
@@ -48,6 +50,13 @@
 
     td {
         vertical-align: center;
+    }
+
+    footer {
+        text-align: center;
+        padding: 3px;
+        background-color: purple;
+        color: white;
     }
 </style>
 
@@ -71,13 +80,15 @@
             <a href="#" class="w3-bar-item w3-button w3-right">Projects</a>
         </div>
 
-        <div class="w3-content w3-margin-top" style="max-width : 2000px;">
+        <div class="w3-content w3-margin-top" style="max-width : 1000px;">
             <!-- The Grid -->
             <div class="w3-row-padding">
+                <header class="w3-center"  style= "margin-bottom: 20px;"><img src="HeaderBanner2.png">
+                </header>
 
                 <!-- Left Column -->
                 <div class="w3-third">
-                    <div class="left w3-white w3-text-grey w3-card">
+                    <div class="left w3-white w3-text-grey w3-card-4">
                         <div class="w3-display-container ">
                             <img src="resume2.jpeg" alt="Person" style="width : 100%">
                             <div class="title">
@@ -110,7 +121,7 @@
                                         <tr>
                                             <td><i class="fa fa-envelope "></i></td>
                                             <td>
-                                                <p style="font-size: 12px">yeejintan@gmail.com</p>
+                                                <p style="font-size: 12px"><a href="mailto:yeejintan@gmail.com">yeejintan@gmail.com</a></p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -159,7 +170,7 @@
 
                 <!--Right content-->
                 <div class="w3-twothird">
-                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
                         <h3 class="title"><b><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;Education</b></h3>
                         <div class="content">
                             <h6><b>SMK Gajah Berang, Malacca</b></h6>
@@ -178,7 +189,7 @@
                         </div>
                     </div>
 
-                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
                         <h3 class="title"><b><i class="fa fa-code-fork"></i>&nbsp;&nbsp;Trainings and Activities</b>
                         </h3>
                         <div class="content">
@@ -199,8 +210,8 @@
                         </div>
                     </div>
 
-                    <div class="w3-container w3-card w3-white w3-margin-bottom">
-                        <h3 class="title"><b><i class="fa fa-code-fork"></i>&nbsp;&nbsp;Skills</b></h3>
+                    <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
+                        <h3 class="title"><b><i class="fa fa-code"></i>&nbsp;&nbsp;Skills</b></h3>
                         <div class="content">
                             <p style="font-size:20px"><b>Java</b></p>
                             <div class="w3-light-grey w3-round-xlarge">
@@ -208,29 +219,55 @@
                                 </div>
                             </div>
 
-                            <p style="font-size:20px"><b>English</b></p>
+                            <p style="font-size:20px"><b>JavaScript</b></p>
                             <div class="w3-light-grey w3-round-xlarge">
-                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:75%">75%
+                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:50%">50%
                                 </div>
                             </div>
 
-                            <p style="font-size:20px"><b>HTML</b></p>
+                            <p style="font-size:20px"><b>HTML/CSS</b></p>
                             <div class="w3-light-grey w3-round-xlarge">
-                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:85%">85%
+                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:65%">65%
                                 </div>
-                            </div><br><br>
+                            </div>
+                            <p style="font-size:20px"><b>Eclipse</b></p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:70%">70%
+                                </div>
+                            </div>
+                            <p style="font-size:20px"><b>MySQL</b></p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:50%">50%
+                                </div>
+                            </div>
+                            <br><br>
                         </div>
-                    </div></div>
+                    </div>
+                    <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
+                        <h3 class="title"><b><i class="fa fa-file-archive-o"></i>&nbsp;&nbsp;Previous Projects</b></h3>
+                        <div class="content">
+                            <h6><b>Mighty Grocery Store</b></h6>
+                            <p>It is a private group project done by 5 members via using Eclipse.This project is
+                                purposely coded to proof our coding skills that has learned during our Semester 2
+                                in Programming 2 course. This project provide services for two main users which are
+                                customers and
+                                admin. Customer able to use this system to buy any groceries that available in this
+                                store and get to know the contact and location of the store whereas admin
+                                are able to use this system to check details of grocery product, add in new or update
+                                grocery products, check details of employees,
+                                add in or update information of every employees, and check promotion that has been done
+                                by the store</p>
+                        </div>
+                    </div>
+                </div>
 
-                    <footer class=" w3-bar-block w3-purple w3-center">
-                        <p>Find me on social media.</p>
-                        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                        <i class="fa fa-instagram w3-hover-opacity"></i>
-                        <i class="fa fa-snapchat w3-hover-opacity"></i>
-                        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                        <i class="fa fa-twitter w3-hover-opacity"></i>
-                        <i class="fa fa-linkedin w3-hover-opacity"></i>
-                    </footer>
+                <footer>
+                    <p>Find me on </p>
+                    <a href="https://www.facebook.com/yeejin.tan.96/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                    <a href="https://www.instagram.com/yeejin_1215/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                    <a href="https://github.com/TanYeeJin-279890"><i class="fa fa-github-square"></i></a>
+                    <p style="font-size:12px; text-align:right;">Done by: Tan Yee Jin</p>
+                </footer>
 
 
 </body>
