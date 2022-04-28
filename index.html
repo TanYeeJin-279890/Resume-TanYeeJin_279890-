@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="w3.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons">
     <title>Resume</title>
 </head>
 <script>
@@ -22,13 +23,24 @@
 
 <style>
     body {
-        background-color: powderblue;
+        background: linear-gradient(to right, #cc33ff 0%, #ff66cc 100%);
+    }
+
+    img {
+        display: block;
+        border: 3px solid white;
+        border-radius: 8px;
+        padding: 1px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
     }
 </style>
 
 <body>
-    <div>
-        <div class="resume w3-bar w3-amber">
+    <div class="wrapper">
+        <div class="w3-bar w3-amber">
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Profile</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Education</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right"> Skills</a>
@@ -46,12 +58,9 @@
             <a href="#" class="w3-bar-item w3-button w3-right">Projects</a>
         </div>
 
-        <div class="w3-row w3-border">
-
-
-            <div class="left w3-container w3-third w3-black">
-                <div class="image"><img src="resume2.jpeg" alt="Person"></div>
-
+        <div class="w3-row w3-border w3-black">
+            <div class="left w3-container w3-third ">
+                <img src="resume2.jpeg" alt="Person">
                 <div class="title">
                     <h3><b>Profile</b></h3>
                 </div>
@@ -70,25 +79,81 @@
                 <div class="w3-text-purple">
                     <h4><b>Contact</b></h4>
                 </div>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <div class="icon">
+                            </div>
+                            <p>yeejintan@gmail.com</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                            </div>
+                            <p>+6010-2107377</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                            </div>
+                            <p>NO50, Jln LP1, Taman Limbongan
+                                Permai, 75200 Melaka.</p>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
 
-            <div class="w3-container w3-twothird">
+            <div class="right w3-container w3-twothird">
+                <h1>Tan Yee Jin</h1>
+                <h3>Bsc IT Majoring in Software Engineering</h3>
                 <div class="title">
-                    <h3><b>Education</b></h3>
+                    <br>
+                    <h3>Education</h3>
                 </div>
-                <div>
+
+                <div class="a">
+                    <h5>SMK Gajah Berang, Malacca</h5>
+                </div>
+                <div class="content">
+                    <pre>
+                        2018 till 2019
+                        CGPA: 3.00
+                        Accomplishment:
+                        Vice Secretary of MPP</pre>
+                </div>
+
+                <div class="a">
                     <h5>University Utara Malaysia, Kedah Darul Aman</h5>
                 </div>
                 <div class="content">
-                    <p>
-                        October 2020 till April 2024
+                    <pre>
+                        October 2020 till Current
                         Current CGPA: 3.88
                         Muet: Band 3
-                        Award: Dean Award 2020/2021</p>
-                    <p>Bringing forth a motivated attitude
-                        and a variety of powerful skills.</p>
-                    <p>Committed to utilizing my skills to
-                        further the mission of a company.</p>
+                        Award: Dean Award Sem 1 and 2 2020/2021</pre>
+                </div>
+
+                <div class="title">
+                    <h3>Skills</h3><br>
+                </div>
+                <div class="content">
+                    <pre>
+                        • Verbal and written communication skills
+                        • Leadership
+                        • Problem-solving skills</pre>
+                </div>
+
+                <div class="title">
+                    <h3>Languages</h3><br>
+                </div>
+                <div class="content">
+                    <pre>
+                        • English
+                        • Mandarin
+                        • Malay</pre>
                 </div>
             </div>
 
