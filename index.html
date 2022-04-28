@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="w3.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fontawesome.com/icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Resume</title>
 </head>
 <script>
@@ -28,19 +28,32 @@
 
     img {
         display: block;
-        border: 3px solid white;
         border-radius: 8px;
-        padding: 1px;
-        width: 200px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Helvetica Neue", sans-serif
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        vertical-align: center;
+    }
 </style>
 
 <body>
-    <div class="wrapper">
-        <div class="w3-bar w3-amber">
+    <div>
+        <div class="bar w3-bar w3-purple">
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Profile</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Education</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right"> Skills</a>
@@ -58,107 +71,167 @@
             <a href="#" class="w3-bar-item w3-button w3-right">Projects</a>
         </div>
 
-        <div class="w3-row w3-border w3-black">
-            <div class="left w3-container w3-third ">
-                <img src="resume2.jpeg" alt="Person">
-                <div class="title">
-                    <h3><b>Profile</b></h3>
-                </div>
-                <div class="content">
-                    <p>
-                        Fresh Graduates who are full of
-                        passion in the programming
-                        field, ready to accept any
-                        challenges, and love to learn new
-                        things.</p>
-                    <p>Bringing forth a motivated attitude
-                        and a variety of powerful skills.</p>
-                    <p>Committed to utilizing my skills to
-                        further the mission of a company.</p>
-                </div>
-                <div class="w3-text-purple">
-                    <h4><b>Contact</b></h4>
-                </div>
-                <div class="content">
-                    <ul>
-                        <li>
-                            <div class="icon">
+        <div class="w3-content w3-margin-top" style="max-width : 2000px;">
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+
+                <!-- Left Column -->
+                <div class="w3-third">
+                    <div class="left w3-white w3-text-grey w3-card">
+                        <div class="w3-display-container ">
+                            <img src="resume2.jpeg" alt="Person" style="width : 100%">
+                            <div class="title">
+                                <h3><b>Profile</b></h3>
                             </div>
-                            <p>yeejintan@gmail.com</p>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <div class="icon">
+                            <div class="content">
+                                <p>
+                                    Fresh Graduates who are full of
+                                    passion in the programming
+                                    field, ready to accept any
+                                    challenges, and love to learn new
+                                    things.</p>
+                                <p>Bringing forth a motivated attitude
+                                    and a variety of powerful skills.</p>
+                                <p>Committed to utilizing my skills to
+                                    further the mission of a company.</p>
                             </div>
-                            <p>+6010-2107377</p>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <div class="icon">
+                            <div class="title">
+                                <h4><b>Contact</b></h4>
                             </div>
-                            <p>NO50, Jln LP1, Taman Limbongan
-                                Permai, 75200 Melaka.</p>
-                        </li>
-                    </ul>
+                            <div style="overflow-x:auto">
+                                <div class="w3-container w3-margin-right w3-large w3-text-teal w3-text-blue">
+                                    <table>
+                                        <tr>
+                                            <td><i class="fa fa-user "></i></td>
+                                            <td>
+                                                <p style="font-size: 12px">Undergraduates</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-envelope "></i></td>
+                                            <td>
+                                                <p style="font-size: 12px">yeejintan@gmail.com</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-phone "></i></td>
+                                            <td>
+                                                <p style="font-size: 12px">+6010-2107377</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-home "></i></td>
+                                            <td>
+                                                <p style="font-size: 12px">NO.50, Jln LP1, Taman Limbongan
+                                                    Permai, 75200 Melaka.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
 
-                </div>
-            </div>
+                            <div class="content w3-container w3-margin-right w3-large w3-text-teal w3-text-blue">
+                                <h4><b><i class="fa fa-globe "></i>&nbsp;&nbsp;Languages</b></h4>
+                                <p style="font-size:15px"><b>Malay</b></p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:75%">75%
+                                    </div>
+                                </div>
 
-            <div class="right w3-container w3-twothird">
-                <h1>Tan Yee Jin</h1>
-                <h3>Bsc IT Majoring in Software Engineering</h3>
-                <div class="title">
-                    <br>
-                    <h3>Education</h3>
-                </div>
+                                <p style="font-size:15px"><b>English</b></p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:75%">75%
+                                    </div>
+                                </div>
 
-                <div class="a">
-                    <h5>SMK Gajah Berang, Malacca</h5>
-                </div>
-                <div class="content">
-                    <pre>
-                        2018 till 2019
-                        CGPA: 3.00
-                        Accomplishment:
-                        Vice Secretary of MPP</pre>
-                </div>
+                                <p style="font-size:15px"><b>Chinese</b></p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:85%">85%
+                                    </div>
 
-                <div class="a">
-                    <h5>University Utara Malaysia, Kedah Darul Aman</h5>
-                </div>
-                <div class="content">
-                    <pre>
-                        October 2020 till Current
-                        Current CGPA: 3.88
-                        Muet: Band 3
-                        Award: Dean Award Sem 1 and 2 2020/2021</pre>
+                                </div><br><br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--End left content-->
                 </div>
 
-                <div class="title">
-                    <h3>Skills</h3><br>
-                </div>
-                <div class="content">
-                    <pre>
-                        • Verbal and written communication skills
-                        • Leadership
-                        • Problem-solving skills</pre>
-                </div>
+                <!--Right content-->
+                <div class="w3-twothird">
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h3 class="title"><b><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;Education</b></h3>
+                        <div class="content">
+                            <h6><b>SMK Gajah Berang, Malacca</b></h6>
+                            <p><i class="fa fa-calendar"></i>&nbsp;&nbsp;2018 – 2019</p>
+                            <p><i class="fa fa-play-circle"></i>&nbsp;&nbsp;CGPA: 3.00</p>
+                            <p><b>Accomplishment:</b></p>
+                            <p><i class="fa fa-user"></i>&nbsp;&nbsp;Vice Secretary of MPP</p>
+                        </div>
+                        <div class="content">
+                            <h6><b>University Utara Malaysia, Kedah Darul Aman</b></h6>
+                            <p><i class="fa fa-calendar"></i>&nbsp;&nbsp;October 2020 – <span
+                                    class="w3-tag w3-teal w3-round">Current</span></p>
+                            <p><i class="fa fa-play-circle"></i>&nbsp;&nbsp;Current CGPA: 3.70</p>
+                            <p><i class="fa fa-play-circle"></i>&nbsp;&nbsp;Muet: Band 3</p>
+                            <p><i class="fa fa-play-circle"></i>&nbsp;&nbsp;Award: Dean’s Award 2020/2021</p>
+                        </div>
+                    </div>
 
-                <div class="title">
-                    <h3>Languages</h3><br>
-                </div>
-                <div class="content">
-                    <pre>
-                        • English
-                        • Mandarin
-                        • Malay</pre>
-                </div>
-            </div>
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h3 class="title"><b><i class="fa fa-code-fork"></i>&nbsp;&nbsp;Trainings and Activities</b>
+                        </h3>
+                        <div class="content">
+                            <p><b><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Involving in UUM Japanese Club as a
+                                    Secretary.</b></p>
+                            <p><b><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Participate in I-TECH UUM: Majoring Talk
+                                    2021 Registration Form
+                                    Programme.</b></p>
+                            <p><b><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Participate in SUSTAINABILITY: A FUTURE
+                                    FOR THE HOSPITALITY INDUSTRY
+                                    Programme.</b></p>
+                            <p><b><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Participate in Webinar Excellent in
+                                    Assignment, Ms Excel Workshop.</b></p>
+                            <p><b><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Participate in Webinar About GOOGLE,
+                                    GDSC UUM And TECHFACT.</b></p>
+                            <p><b><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Participate in Webinar Fundamentals Of
+                                    Web Development.</b></p>
+                        </div>
+                    </div>
 
-        </div>
-    </div>
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h3 class="title"><b><i class="fa fa-code-fork"></i>&nbsp;&nbsp;Skills</b></h3>
+                        <div class="content">
+                            <p style="font-size:20px"><b>Java</b></p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:75%">75%
+                                </div>
+                            </div>
+
+                            <p style="font-size:20px"><b>English</b></p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:75%">75%
+                                </div>
+                            </div>
+
+                            <p style="font-size:20px"><b>HTML</b></p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:85%">85%
+                                </div>
+                            </div><br><br>
+                        </div>
+                    </div></div>
+
+                    <footer class=" w3-bar-block w3-purple w3-center">
+                        <p>Find me on social media.</p>
+                        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                        <i class="fa fa-instagram w3-hover-opacity"></i>
+                        <i class="fa fa-snapchat w3-hover-opacity"></i>
+                        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                        <i class="fa fa-twitter w3-hover-opacity"></i>
+                        <i class="fa fa-linkedin w3-hover-opacity"></i>
+                    </footer>
+
 
 </body>
 
