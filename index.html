@@ -57,6 +57,13 @@
         vertical-align: center;
     }
 
+    .desc {
+        column-count: 2;
+        column-gap: 20px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
     footer {
         text-align: center;
         padding: 3px;
@@ -68,11 +75,11 @@
 <body>
     <div>
         <div class="bar w3-bar w3-purple">
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Profile</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Education</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right"> Skills</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Trainings and Activities</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">Projects</a>
+            <a href="#profile" class="w3-bar-item w3-button w3-hide-small w3-right">Profile</a>
+            <a href="#education" class="w3-bar-item w3-button w3-hide-small w3-right">Education</a>
+            <a href="#skills" class="w3-bar-item w3-button w3-hide-small w3-right"> Skills</a>
+            <a href="#train" class="w3-bar-item w3-button w3-hide-small w3-right">Trainings and Activities</a>
+            <a href="#pp" class="w3-bar-item w3-button w3-hide-small w3-right">Projects</a>
             <a href="javascript:void(0)" onclick="sideMenu()"
                 class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right">&#9776</a>
         </div>
@@ -80,7 +87,7 @@
         <div id="idsidebar" class="w3-bar-block w3-amber w3-hide w3-hide-large w3-hide-medium">
             <a href="#" class="w3-bar-item w3-button w3-right">Profile</a>
             <a href="#" class="w3-bar-item w3-button w3-right">Education</a>
-            <a href="#" class="w3-bar-item w3-button w3-right"> Skills</a>
+            <a href="#" class="w3-bar-item w3-button w3-right">Skills</a>
             <a href="#" class="w3-bar-item w3-button w3-right">Trainings and Activities</a>
             <a href="#" class="w3-bar-item w3-button w3-right">Projects</a>
         </div>
@@ -96,7 +103,7 @@
                     <div class="left w3-white w3-text-grey w3-card-4">
                         <div class="w3-display-container ">
                             <img src="resume2.jpeg" alt="Person" style="width : 100%">
-                            <div class="title">
+                            <div class="title" id="profile">
                                 <h3><b>Profile</b></h3>
                             </div>
                             <div class="content">
@@ -147,9 +154,10 @@
                                 </div>
                             </div>
 
-                            <div class="content w3-container w3-margin-right w3-large w3-text-teal w3-text-blue">
-                                <h4><b><i class="fa fa-globe "></i>&nbsp;&nbsp;Languages</b></h4>
-                                <p style="font-size:15px"><b>Malay</b></p>
+                            <div>
+                                <h4 class="title"><b><i class="fa fa-globe"></i>&nbsp;&nbsp;Languages</b></h4>
+                                <div class="content">
+                                    <p style="font-size:15px"><b>Malay</b></p>
                                 <div class="w3-light-grey w3-round-xlarge">
                                     <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:75%">75%
                                     </div>
@@ -166,18 +174,20 @@
                                     <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:85%">85%
                                     </div>
 
-                                </div><br><br>
+                                </div>
+                                </div>
+                                <br><br>
 
                             </div>
                         </div>
                     </div>
-                    <!--End left content-->
                 </div>
+                <!--End left content-->
 
                 <!--Right content-->
                 <div class="w3-twothird">
                     <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
-                        <h3 class="title"><b><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;Education</b></h3>
+                        <h3 class="title" id="education"><b><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;Education</b></h3>
                         <div class="content">
                             <h6><b>SMK Gajah Berang, Malacca</b></h6>
                             <p><i class="fa fa-calendar"></i>&nbsp;&nbsp;2018 – 2019</p>
@@ -196,7 +206,7 @@
                     </div>
 
                     <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
-                        <h3 class="title"><b><i class="fa fa-code-fork"></i>&nbsp;&nbsp;Trainings and Activities</b>
+                        <h3 class="title" id="train"><b><i class="fa fa-code-fork"></i>&nbsp;&nbsp;Trainings and Activities</b>
                         </h3>
                         <div class="content">
                             <p><b><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Involving in UUM Japanese Club as a
@@ -217,7 +227,7 @@
                     </div>
 
                     <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
-                        <h3 class="title"><b><i class="fa fa-code"></i>&nbsp;&nbsp;Skills</b></h3>
+                        <h3 class="title" id="skills"><b><i class="fa fa-code"></i>&nbsp;&nbsp;Skills</b></h3>
                         <div class="content">
                             <p style="font-size:20px"><b>Java</b></p>
                             <div class="w3-light-grey w3-round-xlarge">
@@ -250,13 +260,14 @@
                         </div>
                     </div>
                     <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
-                        <h3 class="title"><b><i class="fa fa-file-archive-o"></i>&nbsp;&nbsp;Previous Projects</b></h3>
+                        <h3 class="title" id="pp"><b><i class="fa fa-file-archive-o"></i>&nbsp;&nbsp;Previous Projects</b></h3>
                         <div class="content">
                             <h6><b>Mighty Grocery Store</b></h6>
-                            <p>It is a private group project done by 5 members via using Eclipse.This project is
+                            <p class="desc">It is a private group project done by 5 members via using Eclipse.This project is
                                 purposely coded to proof our coding skills that has learned during our Semester 2
-                                in Programming 2 course. This project provide services for two main users which are
-                                customers and
+                                in Programming 2 course. 
+                                
+                                This project provide services for two main users which are customers and
                                 admin. Customer able to use this system to buy any groceries that available in this
                                 store and get to know the contact and location of the store whereas admin
                                 are able to use this system to check details of grocery product, add in new or update
@@ -266,6 +277,7 @@
                         </div>
                     </div>
                 </div>
+                <!--End right content-->
 
                 <footer>
                     <p>Find me on </p>
